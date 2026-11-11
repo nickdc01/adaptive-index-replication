@@ -1,0 +1,38 @@
+# The input data are licensed (Profile Data, Bloomberg) and are not part of this repository.
+data/*
+!data/README.md
+
+# Everything the pipeline writes (tables, figures, caches, logs), which is derived from the
+# licensed data. Scripts write only under results/ (or REPLICATION_RESULTS).
+results/
+figures/
+cache/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Spreadsheets, data files and images anywhere in the tree
+*.xlsx
+*.xls
+*.csv
+*.npz
+*.npy
+*.parquet
+*.pkl
+*.json
+*.png
+*.jpg
+*.pdf
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
